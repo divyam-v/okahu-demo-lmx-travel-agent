@@ -1,0 +1,4 @@
+nest-asyncio
+mcp
+llama-index==0.12.37
+monocle_apptrace
