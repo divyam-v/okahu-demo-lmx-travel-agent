@@ -2,6 +2,7 @@ nest-asyncio
 mcp
 llama-index==0.12.37
 llama-index-tools-mcp
-monocle_apptrace
 fastapi
 uvicorn
+--extra-index-url https://okahu.jfrog.io/artifactory/api/pypi/okahu-patch-pypi/simple
+monocle_apptrace==0.7.0b2
