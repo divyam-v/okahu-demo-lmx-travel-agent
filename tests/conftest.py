@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 
-# Add parent directory to path to import adk_travel_agent module
+# Add parent directory to path to import llamaindex_travel_agent module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def pytest_configure(config):

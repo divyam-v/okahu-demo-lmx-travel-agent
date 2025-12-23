@@ -5,15 +5,17 @@ import logging
 import uvicorn
 import threading
 import time
+import os
 from dotenv import load_dotenv
 
-from travel_agent import (
+from llamaindex_travel_agent import (
     setup_agents
 )
 from monocle_test_tools import TestCase, MonocleValidator
 from weather_mcp_server import app as weather_app
-logger = logging.getLogger(__name__)
 
+OKAHU_API_KEY = os.environ.get('OKAHU_API_KEY')
+logging.basicConfig(level=logging.WARN)
 load_dotenv()
 
 def start_weather_server():
@@ -27,7 +29,6 @@ def start_weather_server():
     time.sleep(2)  # Wait for server to start
     return server_thread
 
-logger.info("Starting weather server...")
 weather_server_process = start_weather_server()
 
 

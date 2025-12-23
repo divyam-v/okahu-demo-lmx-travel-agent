@@ -11,7 +11,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# setup_monocle_telemetry(workflow_name="travel-agent-lmx-wf-05", monocle_exporters_list='file')
+setup_monocle_telemetry(workflow_name="travel-agent-lmx-wf-05", monocle_exporters_list='file')
 
 def book_hotel(hotel_name: str):
     """Book a hotel"""
@@ -131,6 +131,5 @@ async def run_agent(user_msg: str = None):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARN)
-    setup_monocle_telemetry(workflow_name="travel-agent-lmx-wf-05", monocle_exporters_list='file')
     asyncio.run(run_agent())
     

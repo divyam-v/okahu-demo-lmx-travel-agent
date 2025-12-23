@@ -1,4 +1,7 @@
 nest-asyncio
 mcp
 llama-index==0.12.37
+llama-index-tools-mcp
 monocle_apptrace
+fastapi
+uvicorn
