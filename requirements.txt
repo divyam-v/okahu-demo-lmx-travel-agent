@@ -1,8 +1,8 @@
-nest-asyncio
-mcp
-llama-index==0.12.37
-llama-index-tools-mcp
-fastapi
-uvicorn
+nest-asyncio==1.6.0
+mcp==1.25.0
+llama-index==0.14.10
+llama-index-tools-mcp==0.4.5
+fastapi==0.128.0
+uvicorn==0.40.0
 --extra-index-url https://okahu.jfrog.io/artifactory/api/pypi/okahu-patch-pypi/simple
 monocle_apptrace==0.7.0b2
